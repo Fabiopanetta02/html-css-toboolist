@@ -53,12 +53,6 @@ body{
     display: inline;
 }
 
-ul{
-    font-size: 15px;
-    list-style-position: inside;
-    padding: 0;
-}
-
 .check{
     color: green;
     border: 1px solid green;
@@ -77,13 +71,6 @@ ul{
     padding: 5px 10px;
     border-radius: 30%;
 }
-
-
-li{
-    list-style-type: none;
-    display: inline;
-}
-
 
 .q1{
     color: white;
