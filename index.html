@@ -9,43 +9,76 @@
     <title>Tobolist</title>
 </head>
 <body>
+<!-- header -->
     <header>
-       <div id="main-header">
-           <img src="img/Logo.png" alt="Logo-boolean" class="logo">
-           <h1 id="main-title">Toboolist</h1>
-       </div> 
+        <img src="img/Logo.png" alt="toboolist" id="logo">
+        <h1 id="main-title">Toboolist</h1>
     </header>
-
+<!-- contenuto principale -->
     <main>
-        <form>
-            <section class="choose-file">
-                <button class="task">Add Task</button>
-                <button class="section">Add Section</button>
+        <div class="container bg-white rounded">
+            <!-- Sezione actions -->
+            <section id="actions">
+                <button class="btn btn-primary">Add Task</button>
+                <button class="btn btn-secondary">Add Section</button>
             </section>
-        </form>
-
-        <section class="list">
-            <div class="new-task">
-                &#9207; <h2 class="title-section">New Task</h2>
-                <p><span class="entity check">&#10004;</span>Quarently Newsletter <span class="label editorial">Editorial</span></p>
-            </div>
-
-            <div class="today">
-                &#9207; <h2 class="title-section">Today</h2>
-                <p><span class="entity check">&#10004;</span>Recruiting blog post <span class="label editorial">Editorial</span></p>
-                <p><span class="entity check">&#10004;</span>Mobile app launch <span class="label q1">Q1 Goals</span></p>
-                <p><span class="entity cross">&#9587;</span>Mobile app launch <span class="label recruiting">Recruiting</span></p>
-                <p><span class="entity check">&#10004;</span>Summit update to mobile storefronts <span class="label mobile">Mobile</span></p>
-            </div>
-
-            <div class="upcoming">
-                &#9207; <h2 class="title-section">Upcoming</h2>
-                <p><span class="entity cross">&#9587;</span>Schedule meeting with Alex</p>
-                <p><span class="entity check">&#10004;</span>Homepage refresh <span class="label website">Website</span></p>
-                <p><span class="entity check">&#10004;</span>Onboard new Sales team members <span class="label sales">Sales</span></p>
-                <p><span class="entity check">&#10004;</span>Review editorial calendar <span class="label editorial">Editorial</span></p>
-            </div>
-        </section>
+            <!-- Task section -->
+            <section id="tasks">
+                <ul>
+                    <li>
+                       <h3>&blacktriangledown; New Task</h3>
+                       <ul>
+                           <li class="task-item">
+                                <span class="task-status check">&check;</span> <span class="task-text">Quarterly Newsletter</span> 
+                                <span class="badge badge-editorial">Editorial</span>
+                            </li>
+                       </ul>
+                    </li>
+                    <li>
+                        <h3>&blacktriangledown; Today</h3>
+                        <ul>
+                            <li class="task-item">
+                                 <span class="task-status check">&check;</span> <span class="task-text">Recruiting blog post</span> 
+                                 <span class="badge badge-editorial">Editorial</span>
+                             </li>
+                             <li class="task-item">
+                                <span class="task-status check">&check;</span> <span class="task-text">Mobile app launch</span> 
+                                <span class="badge badge-q1">Q1 Goals</span>
+                            </li>
+                            <li class="task-item">
+                                <span class="task-status cross">&cross;</span> <span class="task-text">Interview John H.</span> 
+                                <span class="badge badge-recruiting">Recruiting</span>
+                            </li>
+                            <li class="task-item">
+                                <span class="task-status check">&check;</span> <span class="task-text">Summit update to mobile storefronts</span> 
+                                <span class="badge badge-mobile">Mobile</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>&blacktriangledown; Upcoming</h3>
+                        <ul>
+                            <li class="task-item">
+                                <span class="task-status cross">&cross;</span> <span class="task-text">Schedule meeting with Alex</span> 
+                            </li>
+                            <li class="task-item">
+                                <span class="task-status check">&check;</span> <span class="task-text">Homepage refresh</span> 
+                                <span class="badge badge-website">Website</span>
+                            </li>
+                            <li class="task-item">
+                                <span class="task-status check">&check;</span> <span class="task-text">Onboard new Sales team members</span> 
+                                <span class="badge badge-sales">Sales</span>
+                            </li>
+                            <li class="task-item">
+                                <span class="task-status check">&check;</span> <span class="task-text">Review editorial calendar</span> 
+                                <span class="badge badge-editorial">Editorial</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+                
+        </div>
     </main>
     
 </body>

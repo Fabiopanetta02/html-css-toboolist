@@ -1,118 +1,149 @@
-/*  */
-body{
+/* Generics */
+*{
     margin: 0;
-    background-color: lightgrey;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-/* header */
-#main-header{
-    height: 50px;
-    padding: 10px;
+header{
+    height: 70px;
+    line-height: 70px;
     background-color: white;
-}
-
-.logo{
-    vertical-align: middle;
-}
-
-#main-title{
-    display: inline;
-    vertical-align: middle;
-}
-
-/* main */
-.choose-file{
-    width: 1080px;
-    margin: 30px auto 2px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px 50px 10px;
-}
-
-.task{
-    background-color: dodgerblue;
-    color: white;
-    padding: 5px 10px;
-    border-style: none;
-    border-radius: 5px;
-}
-
-.section{
-    color: lightgrey;
-    padding: 5px 10px;
-    border-style: solid;
-    border-color: lightgrey;
-    border-radius: 5px;
-}
-
-.list{
-    width: 1080px;
-    margin: 2px auto 10px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px 50px 5px;
-}
-
-.title-section{
-    display: inline;
-}
-
-p{
+    padding-left: 20px;
     margin-bottom: 30px;
 }
 
-.entity{
-    width: 15px;
-    height: 15px;
-    font-size: 10px;
+h1{
+    display: inline;
+    font-size: 38px;
+    font-weight: 900;
+    vertical-align: middle;
+}
+
+h3{
+    margin-top: 30px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* Utilis */
+.bg-white{
+    background-color: white;
+}
+
+.container{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.rounded{
+    border-radius: 5px;
+}
+
+section{
+    padding: 10px 30px ;
+}
+
+/* Header */
+#logo{
+    vertical-align: middle;
+}
+
+
+/* Actions section */
+#actions{
+    border-bottom: 1px solid #aaa ;
+}
+
+
+/* button */
+.btn{
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+
+.btn-primary{
+    color: white;
+    background-color: dodgerblue; 
+    border-color: dodgerblue;
+}
+
+.btn-secondary{
+    color: lightgrey;
+    border: 1px solid currentColor;
+}
+
+
+/* tasks */
+.task-item{
+    line-height: 40px;
+    height: 40px;
+}
+
+
+.task-status{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
     border-radius: 50%;
-    padding: 5px;
-    margin-right: 10px;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: middle;
 }
 
 .check{
     color: green;
-    border: 1px solid green;
-}
-
-.label{
-    color: white;
-    font-size: 12px;
-    padding: 5px 10px;
-    border-radius: 30px;
-}
-
-.editorial{
-    background-color: dodgerblue;
-}
-
-.q1{
-    background-color: purple;
+    border: 1px solid currentColor;
 }
 
 .cross{
     color: red;
-    border: 1px solid red;
+    border: 1px solid currentColor;
 }
 
-.recruiting{
+.task-text{
+    vertical-align: middle;
+}
+
+
+/* badge */
+.badge{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.badge-editorial{
+    background-color: dodgerblue;
+}
+
+.badge-q1{
+    background-color: blueviolet;
+}
+
+.badge-recruiting{
     background-color: lightgreen;
 }
 
-.mobile{
+.badge-mobile{
     background-color: orange;
 }
 
-.upcoming, .today, .new-task{
-    margin-top: 40px;
-}
-
-.website{
+.badge-website{
     background-color: violet;
 }
 
-.sales{
+.badge-sales{
     background-color: greenyellow;
 }
